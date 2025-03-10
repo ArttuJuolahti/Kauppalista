@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauppalista</title>
+    
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">  <!-- Bootstrap-tyylikirjasto ulkoasun ja responsiivisuuden parantamiseen -->
+    
+    
+    <link rel="stylesheet" href="styles/styles.css"><!-- Oma tyylitiedosto -->
+</head>
+<body>
+    
+    <div class="matrix-container"><!-- Taustalla näkyvä matrx effekti -->
+        <canvas id="matrix"></canvas>
+    </div>
+    
+    
+    <div class="container mt-5"> <!-- Bootstrapin container, joka keskittää ja järjestelee sisällön -->
+        <h1>Kauppalista</h1>
+        
+        
+        <form id="kauppalista-form" class="mb-3"><!-- Lomake uuden tuotteen lisäämiseen listalle -->
+            <div class="form-group">
+                
+                <input type="text" id="tuote" class="form-control" placeholder="Kirjoita tuote"> <!-- Tekstikenttä, johon käyttäjä syöttää lisättävän tuotteen -->
+                
+                
+                <div id="virheilmoitus" class="text-danger mt-2"> </div><!-- Virheilmoituksille varattu alue -->
+            </div>
+            <button type="submit" class="btn btn-primary">Lisää</button> <!-- Lisää-nappi, joka lisää tuotteen listalle -->
+        </form>
+        
+       
+        <ul id="lista" class="list-group"></ul> <!-- Lista lisätyistä tuotteista -->
+    </div>
+    
+   
+    <script src="scripts/script.js"></script> <!-- JavaScript-tiedosto, joka hoitaa sovelluksen logiikan -->
+    
+   
+    <script src="scripts/matrix.js"></script> <!-- JavaScript-tiedosto, joka vastaa matriisieffektistä -->
+</body>
+</html>
+
