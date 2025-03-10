@@ -99,6 +99,13 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Error: Product is already in the list");
             return;
         }
+        
+        if (tuote.length > 100) { // Tarkistetaan, että nimi ei ole liian pitkä
+            virheilmoitus.textContent = "Tuotenimen tulee olla enintään 100 merkkiä pitkä!";
+            input.classList.add("virhe"); // Lisätään virheluokka
+            console.log("Error: Product name must be at most 100 characters long");
+            return;
+        }
 
 
         virheilmoitus.textContent = ""; // Tyhjennetään virheilmoitus
