@@ -1,0 +1,2 @@
+# Kauppalista
+Yksinkertainen kauppalista
